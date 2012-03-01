@@ -23,6 +23,12 @@
 ;----------------------------------------------------------------------------
 (require 'init-modeline)
 
+(require 'init-emacs)
+(require 'init-doxymacs)
+(require 'init-cedet)
+(require 'init-ecb )
+(require 'init-highlight-symbol)
+
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
@@ -97,7 +103,7 @@
 (require 'init-yari)
 ;(require 'init-etags-select)
 (require 'init-cc-mode)
-;(require 'init-auto-complete-clang)
+(require 'init-auto-complete-clang)
 (require 'init-semantic)
 (require 'init-cmake-mode)
 (require 'init-csharp-mode)
@@ -114,7 +120,6 @@
 ;(require 'init-undo-tree)
 (require 'init-moz)
 
-(require 'init-emacs)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
@@ -141,6 +146,9 @@
    (message "Emacs startup time: %d seconds."
     (time-to-seconds (time-since emacs-load-start-time)))
    )
+
+(require 'init-globalkey)
+
 ;;; Local Variables:
 ;;; no-byte-compile: t
 ;;; End:

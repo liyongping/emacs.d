@@ -23,12 +23,6 @@
 ;----------------------------------------------------------------------------
 (require 'init-modeline)
 
-(require 'init-emacs)
-(require 'init-doxymacs)
-(require 'init-cedet)
-(require 'init-ecb )
-(require 'init-highlight-symbol)
-
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
@@ -103,7 +97,7 @@
 (require 'init-yari)
 ;(require 'init-etags-select)
 (require 'init-cc-mode)
-(require 'init-auto-complete-clang)
+;(require 'init-auto-complete-clang)
 (require 'init-semantic)
 (require 'init-cmake-mode)
 (require 'init-csharp-mode)
@@ -147,6 +141,11 @@
     (time-to-seconds (time-since emacs-load-start-time)))
    )
 
+(require 'init-doxymacs)
+(require 'init-cedet)
+(require 'init-ecb )
+(require 'init-highlight-symbol)
+(require 'init-emacs)
 (require 'init-globalkey)
 
 ;;; Local Variables:
